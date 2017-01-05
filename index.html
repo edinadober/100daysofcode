@@ -6,6 +6,24 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+		<h1>100 Days of Code</h1>
+		<h2>Countdown</h2>
+		<div class="box"><p id="clock"></p></div>
+		<h3>DAYS</h3>
 
+	<footer>
+		<p>Created by NewYearFreshLife <br>This was part of the 100DaysOfCode project</p>
+		<p>2017</p>
+	</footer>
+	<script type="text/javascript">
+		var today = new Date();
+		var endOfChallenge = new Date("April 13, 2017");
+		var msToday = today.getTime();
+		var msEnd = endOfChallenge.getTime();
+		var diff = msEnd - msToday;
+		var dDiff = diff / (1000 * 60 * 60 * 24);
+		dDiff = Math.floor(dDiff);
+		document.getElementById("clock").innerHTML = dDiff;
+	</script>
 </body>
 </html>
